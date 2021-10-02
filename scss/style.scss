@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap');
+
+:root {
+    --hover-width: 93%;
+    --other-width: 7%;
+}
+
+*{
+    font-family: 'Cairo', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+h1, h2{
+    font-weight: 700;
+    font-size: 6rem;
+    line-height: 5rem;
+
+}
+h2{
+    font-style: italic;
+}
+h3{
+    font-size: 2rem;
+    display: inline;
+    font-weight: 700;
+}
+
+h4{
+    font-weight: 400;
+}
+p{
+    margin-top: 1rem;
+    line-height: 2.5rem;
+}
+body {
+    width: 100%;
+    height: 100vh;
+}
+.container {
+    position:relative;
+    width: 100%;
+    height: 100%;
+
+    
+    .gnb {
+        position:fixed;
+        left:30px;
+        top:30px;
+        width: 30px;
+        height: 20px;
+        z-index: 10;
+        
+
+        &:hover span{
+            width: 100%;
+            
+        }
+
+        span {
+            position:absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: black;
+            height: 3px;
+            width: 50%;
+            transition: all 0.3s;
+        }
+
+        &::before{
+            content: '';
+            width: 100%;
+            position:absolute;
+            top:0;
+            height: 3px;
+            background-color: black;
+        }
+        &::after{
+            content: '';
+            width: 100%;
+            height: 3px;
+            background-color: black;
+            position:absolute;
+            bottom:0;
+        }
+    }
+    .logo {
+        position:fixed;
+        top: 30px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 10;
+    
+        h1{
+            display: inline;
+        }
+
+        i{
+            font-size: 40px;
+        
+        }
+    }
+
+    .split {
+        width: 50%;
+        position:absolute;
+        height: 100%;
+        overflow: hidden;
+     
+        &.left{
+            left: 0;
+            background:url(/img/skate.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            flex:0.5;
+            transition:all 1s ease-in-out;
+  
+
+            .fa-chevron-right{
+                position:absolute;
+                top: 50%;
+                right: 2%;
+                color: red;
+                font-size: 3rem;
+            }
+
+          
+        
+        }
+     
+        &.right{
+            right: 0;
+            background:url(/img/orange-shoes.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: white;
+            transition:all 1s ease-in-out;
+
+            
+            .fa-chevron-left{
+                position:absolute;
+                top: 50%;
+                left: 2%;
+                color: red;
+                font-size: 3rem;
+            }
+       
+       
+        }
+     
+        .text-band{
+            position:absolute;
+            top: 30%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            white-space: nowrap;
+          
+            .paragraph-right, .paragraph-left{
+                opacity:0;
+                transition:all 1s  0.5s;
+                margin-bottom: 1rem;
+                top: 30%;
+                position:absolute;
+            
+
+                &.active {
+                    top:70%;
+                    opacity:1;
+                    transition:all 1s  0.5s;
+                    display: block;
+                  
+                }
+            }
+
+        
+    
+
+            a{
+                color: white;
+                text-decoration: none;
+                margin-left: 3rem;
+                font-size: 1.5rem;
+                border: 1px solid white;
+                padding: 0.2rem 3rem;
+                border-radius: 20rem;
+           
+           
+                i{
+                    padding-left: 10px;
+                    vertical-align: middle;
+                
+                }
+            }
+
+        }   
+      span {
+          font-size: 2rem;
+      }
+    }
+ .fa-euro-sign{
+     font-size: 2rem;
+     margin-top: 3rem;
+ }
+
+
+
+}
+
+.hover-left .left{
+   width: var(--hover-width);
+}
+.hover-left .right {
+    width: var(--other-width);
+}
+.hover-right .left{
+    width: var(--other-width);
+ }
+ .hover-right .right {
+    width: var(--hover-width);
+ }

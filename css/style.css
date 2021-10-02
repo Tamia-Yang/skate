@@ -1,0 +1,161 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap");
+:root {
+  --hover-width: 93%;
+  --other-width: 7%; }
+
+* {
+  font-family: 'Cairo', sans-serif;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none; }
+
+h1, h2 {
+  font-weight: 700;
+  font-size: 6rem;
+  line-height: 5rem; }
+
+h2 {
+  font-style: italic; }
+
+h3 {
+  font-size: 2rem;
+  display: inline;
+  font-weight: 700; }
+
+h4 {
+  font-weight: 400; }
+
+p {
+  margin-top: 1rem;
+  line-height: 2.5rem; }
+
+body {
+  width: 100%;
+  height: 100vh; }
+
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%; }
+  .container .gnb {
+    position: fixed;
+    left: 30px;
+    top: 30px;
+    width: 30px;
+    height: 20px;
+    z-index: 10; }
+    .container .gnb:hover span {
+      width: 100%; }
+    .container .gnb span {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: black;
+      height: 3px;
+      width: 50%;
+      transition: all 0.3s; }
+    .container .gnb::before {
+      content: '';
+      width: 100%;
+      position: absolute;
+      top: 0;
+      height: 3px;
+      background-color: black; }
+    .container .gnb::after {
+      content: '';
+      width: 100%;
+      height: 3px;
+      background-color: black;
+      position: absolute;
+      bottom: 0; }
+  .container .logo {
+    position: fixed;
+    top: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10; }
+    .container .logo h1 {
+      display: inline; }
+    .container .logo i {
+      font-size: 40px; }
+  .container .split {
+    width: 50%;
+    position: absolute;
+    height: 100%;
+    overflow: hidden; }
+    .container .split.left {
+      left: 0;
+      background: url(/img/skate.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      flex: 0.5;
+      transition: all 1s ease-in-out; }
+      .container .split.left .fa-chevron-right {
+        position: absolute;
+        top: 50%;
+        right: 2%;
+        color: red;
+        font-size: 3rem; }
+    .container .split.right {
+      right: 0;
+      background: url(/img/orange-shoes.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      color: white;
+      transition: all 1s ease-in-out; }
+      .container .split.right .fa-chevron-left {
+        position: absolute;
+        top: 50%;
+        left: 2%;
+        color: red;
+        font-size: 3rem; }
+    .container .split .text-band {
+      position: absolute;
+      top: 30%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap; }
+      .container .split .text-band .paragraph-right, .container .split .text-band .paragraph-left {
+        opacity: 0;
+        transition: all 1s  0.5s;
+        margin-bottom: 1rem;
+        top: 30%;
+        position: absolute; }
+        .container .split .text-band .paragraph-right.active, .container .split .text-band .paragraph-left.active {
+          top: 70%;
+          opacity: 1;
+          transition: all 1s  0.5s;
+          display: block; }
+      .container .split .text-band a {
+        color: white;
+        text-decoration: none;
+        margin-left: 3rem;
+        font-size: 1.5rem;
+        border: 1px solid white;
+        padding: 0.2rem 3rem;
+        border-radius: 20rem; }
+        .container .split .text-band a i {
+          padding-left: 10px;
+          vertical-align: middle; }
+    .container .split span {
+      font-size: 2rem; }
+  .container .fa-euro-sign {
+    font-size: 2rem;
+    margin-top: 3rem; }
+
+.hover-left .left {
+  width: var(--hover-width); }
+
+.hover-left .right {
+  width: var(--other-width); }
+
+.hover-right .left {
+  width: var(--other-width); }
+
+.hover-right .right {
+  width: var(--hover-width); }
+
+/*# sourceMappingURL=style.css.map */
