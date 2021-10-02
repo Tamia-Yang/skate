@@ -35,15 +35,22 @@ $(".right").mouseleave(function () {
 function isHover() {
     if ($container.hasClass("hover-right")) {
         $(".paragraph-right").addClass("active");
+        $(".price-right").addClass("on");
+        $(".btn-right").addClass("on");
         // $(".paragraph-right").fadeIn("linear");
     } else if ($container.hasClass("hover-left")) {
         $(".paragraph-left").addClass("active");
+        $(".price-left").addClass("on");
+        $(".btn-left").addClass("on");
         // $(".paragraph-left").fadeIn("linear");
 
 
     } else {
         $(".paragraph-right").removeClass("active");
         $(".paragraph-left").removeClass("active");
+        $(".price-right").removeClass("on");
+        $(".btn-right").removeClass("on");
+        $(".btn-left").removeClass("on");
     }
 
 }

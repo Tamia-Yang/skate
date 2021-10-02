@@ -14,8 +14,8 @@
 
 h1, h2 {
   font-weight: 700;
-  font-size: 6rem;
-  line-height: 5rem; }
+  font-size: 10rem;
+  line-height: 9rem; }
 
 h2 {
   font-style: italic; }
@@ -81,70 +81,92 @@ body {
       display: inline; }
     .container .logo i {
       font-size: 40px; }
-  .container .split {
-    width: 50%;
-    position: absolute;
-    height: 100%;
-    overflow: hidden; }
-    .container .split.left {
-      left: 0;
-      background: url(/img/skate.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      flex: 0.5;
-      transition: all 1s ease-in-out; }
-      .container .split.left .fa-chevron-right {
-        position: absolute;
-        top: 50%;
-        right: 2%;
-        color: red;
-        font-size: 3rem; }
-    .container .split.right {
-      right: 0;
-      background: url(/img/orange-shoes.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
-      color: white;
-      transition: all 1s ease-in-out; }
-      .container .split.right .fa-chevron-left {
-        position: absolute;
-        top: 50%;
-        left: 2%;
-        color: red;
-        font-size: 3rem; }
-    .container .split .text-band {
-      position: absolute;
+  .container .text-band {
+    position: relative;
+    top: 30%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    white-space: nowrap; }
+    .container .text-band .paragraph-right, .container .text-band .paragraph-left {
+      opacity: 0;
+      transition: all 1s  0.5s;
+      margin-bottom: 1rem;
       top: 30%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      white-space: nowrap; }
-      .container .split .text-band .paragraph-right, .container .split .text-band .paragraph-left {
-        opacity: 0;
-        transition: all 1s  0.5s;
-        margin-bottom: 1rem;
-        top: 30%;
-        position: absolute; }
-        .container .split .text-band .paragraph-right.active, .container .split .text-band .paragraph-left.active {
-          top: 70%;
-          opacity: 1;
-          transition: all 1s  0.5s;
-          display: block; }
-      .container .split .text-band a {
-        color: white;
-        text-decoration: none;
-        margin-left: 3rem;
-        font-size: 1.5rem;
-        border: 1px solid white;
-        padding: 0.2rem 3rem;
-        border-radius: 20rem; }
-        .container .split .text-band a i {
-          padding-left: 10px;
-          vertical-align: middle; }
-    .container .split span {
-      font-size: 2rem; }
-  .container .fa-euro-sign {
-    font-size: 2rem;
-    margin-top: 3rem; }
+      position: absolute;
+      font-size: 22px; }
+      .container .text-band .paragraph-right.active, .container .text-band .paragraph-left.active {
+        top: 94%;
+        opacity: 1;
+        transition: all 1s  0.5s; }
+    .container .text-band a {
+      color: white;
+      text-decoration: none;
+      margin-left: 3rem;
+      font-size: 1.5rem;
+      border: 1px solid white;
+      padding: 0.2rem 3rem;
+      border-radius: 20rem; }
+      .container .text-band a i {
+        padding-left: 10px;
+        vertical-align: middle; }
+  .container span {
+    font-size: 2rem; }
+
+.fa-euro-sign {
+  font-size: 2rem;
+  margin-top: 3rem; }
+
+.split {
+  width: 50%;
+  position: absolute;
+  height: 100%;
+  overflow: hidden; }
+  .split.left {
+    left: 0;
+    background: url(/img/skate.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex: 0.5;
+    transition: all 1s ease-in-out; }
+    .split.left .fa-chevron-right {
+      position: absolute;
+      top: 50%;
+      right: 2%;
+      color: red;
+      font-size: 3rem;
+      transform: translateY(-50%); }
+  .split.right {
+    right: 0;
+    background: url(/img/orange-shoes.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    transition: all 1s ease-in-out; }
+    .split.right .fa-chevron-left {
+      position: absolute;
+      top: 50%;
+      left: 2%;
+      transform: translateY(-50%);
+      color: red;
+      font-size: 3rem; }
+    .split.right .btn-right, .split.right .btn-left {
+      position: absolute;
+      top: 120%;
+      left: 5%; }
+      .split.right .btn-right.on, .split.right .btn-left.on {
+        top: 170%;
+        left: 5%;
+        transition: all 1s   ease-in-out; }
+    .split.right .price-right, .split.right .price-left {
+      opacity: 0;
+      position: absolute;
+      top: 100%; }
+      .split.right .price-right i, .split.right .price-left i {
+        font-size: 22px; }
+      .split.right .price-right.on, .split.right .price-left.on {
+        opacity: 1;
+        transition: all 1s ease-in-out;
+        top: 160%; }
 
 .hover-left .left {
   width: var(--hover-width); }
