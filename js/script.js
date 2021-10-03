@@ -59,3 +59,21 @@ document.querySelector(".btn-right").addEventListener("click", () => {
 document.querySelector(".close").addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
 })
+
+// shopping bag
+
+const add = document.querySelector(".fa-plus");
+const sub = document.querySelector(".fa-minus");
+const countResult = document.querySelector(".count-result");
+
+add.addEventListener("click", () => {
+    countResult.innerHTML++;
+})
+sub.addEventListener("click", () => {
+    countResult.innerHTML--;
+    if (countResult <= 0) {
+        countResult.innerHTML = 0;
+    } else {
+        countResult.innerHTML--;
+    }
+})

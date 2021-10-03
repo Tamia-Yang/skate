@@ -259,7 +259,13 @@ body {
         padding: 10px 60px;
         border-radius: 25px;
         box-shadow: 5px 12px 25px rgba(1, 146, 204, 0.6);
-        margin-left: 40px; }
+        margin-left: 40px;
+        outline: none;
+        border: none;
+        transition: all 0.4s; }
+        .shoppingList .table-bottom .checkOut .btn:hover {
+          transform: translateY(10px);
+          box-shadow: 3px 8px 8px rgba(1, 146, 204, 0.6); }
       .shoppingList .table-bottom .checkOut .result {
         float: left;
         font-weight: 900;
