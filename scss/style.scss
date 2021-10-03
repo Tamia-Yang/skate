@@ -17,8 +17,8 @@
 
 h1, h2{
     font-weight: 700;
-    font-size: 10rem;
-    line-height: 9rem;
+    font-size: 12rem;
+    line-height: 10rem;
 
 }
 h2{
@@ -107,7 +107,7 @@ body {
     .text-band{
         position:relative;
         top: 30%;
-        left:70%;
+        left:55%;
         transform: translate(-50%,-50%);
         white-space: nowrap;
       
@@ -115,12 +115,12 @@ body {
             opacity:0;
             transition:all 1s  0.5s;
             margin-bottom: 1rem;
-            top: 30%;
+            top: 20%;
             position:absolute;
-            font-size: 22px;
+            font-size: 24px;
 
             &.active {
-                top:94%;
+                top:100%;
                 opacity:1;
                 transition:all 1s  0.5s;
       
@@ -200,17 +200,18 @@ body {
                 top: 50%;
                 left: 2%;
                 transform: translateY(-50%);
-                color: red;
+                color: white;
                 font-size: 3rem;
          
             }
             .btn-right, .btn-left{
                 position:absolute;
-                top:120%;
+                top:110%;
                 left:5%;
+                font-size: 2rem;
 
                 &.on{
-                    top:170%;
+                    top:146%;
                     left:5%;
                     transition:all 1s   ease-in-out;
                 }
@@ -222,13 +223,13 @@ body {
                
 
                 & i{
-                    font-size: 22px;
+                
                     
                 }
                 &.on{
                     opacity:1;
                     transition:all 1s ease-in-out;
-                    top: 160%;
+                    top: 140%;
                 }
             }
        
@@ -252,4 +253,140 @@ body {
  }
  .hover-right .right {
     width: var(--hover-width);
+ }
+ 
+//  section2
+ .shoppingList {
+    .container-bag{
+        width: 100%;
+        height: 100%;
+        position:relative;
+
+        .title {
+            display:flex;
+            justify-content: space-between;
+            align-items:center;
+            padding: 3rem 5rem;
+
+            span {
+                font-size: 2rem;
+            }
+            .close {
+                font-size: 1.4rem;
+            }
+        }
+        h3{
+            font-size: 3rem;
+            font-weight: 900;
+        }
+        .heading {
+            display:flex;
+            justify-content: center;
+            align-items:center;
+            font-size: 5rem;
+            margin-bottom: 10px;
+
+            span {
+                font-weight: 900;
+            }
+        }
+      
+    }
+    .table{
+        width: 100%;
+        height: 100%;
+        padding: 0 30px;
+      
+
+        img{
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        tr{
+
+   
+            th,td{
+                text-align: center;
+                width: 16.6%;
+                height: 10%x;
+                font-weight: 900;
+                font-size: 1.3rem;
+             
+                &:nth-child(2){
+                    width: 10%;
+                }
+            }
+            td{
+                font-weight: 400;
+                border-top: 1px solid #ccc;
+            }
+            .fa-euro-sign{
+                font-size: 1.3rem;
+            }
+         
+        }
+    }
+    .count-result{
+        width: 70px;
+        height: 40px;
+        text-align: center;
+        border:1px solid #ccc;
+        display:inline-block;
+        vertical-align: middle;
+        border-radius: 5px;
+        margin: 15px;
+
+    }
+    .table-bottom{
+
+        padding: 20px 120px;
+        &::after{
+            content: '';
+            clear: both;
+            display: block;
+        }
+
+        img{
+            width:15%;
+            float: left;
+
+       
+        }
+        .check-out {
+            width: 40%;
+            float: right;
+            flex:none;
+            border: 1px solid red;
+            text-align: center;
+           
+        
+        }
+        .btn{
+            float: right;
+            color: white;
+            background-color:blue;
+            padding: 10px 60px;
+            border-radius: 25px;
+            box-shadow: 5px 12px 25px rgba(0,0,0,0.6 );
+            margin-left: 40px;
+        
+        }
+        .result{
+            float: right;
+            font-weight: 900;
+            font-size: 2rem;
+            vertical-align: middle;
+            margin-right: 30px;
+          
+            &.i{
+                font-size: 2rem;
+                vertical-align: middle;
+            }
+        }
+        p{
+            font-size: 2rem;
+        }
+       
+    }
  }

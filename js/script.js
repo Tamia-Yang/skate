@@ -9,41 +9,37 @@
 // right.addEventListener("mouseleave", () => container.classList.remove("hover-right"))
 
 var $container = $(".container");
+var $left = $(".left");
+var $right = $(".right");
 
-$(".left").click(function (e) {
+$left.click(function (e) {
     e.preventDefault();
     $container.addClass("hover-left");
     isHover();
 })
-$(".left").mouseleave(function () {
+$left.mouseleave(function () {
     $container.removeClass("hover-left");
     isHover();
 })
-$(".right").click(function (e) {
+$right.click(function (e) {
     e.preventDefault();
     $container.addClass("hover-right");
     isHover();
 })
-$(".right").mouseleave(function () {
+$right.mouseleave(function () {
     $container.removeClass("hover-right");
     isHover();
 })
-
-// $(".paragraph-right").hide();
-// $(".paragrap-left").hide();
 
 function isHover() {
     if ($container.hasClass("hover-right")) {
         $(".paragraph-right").addClass("active");
         $(".price-right").addClass("on");
         $(".btn-right").addClass("on");
-        // $(".paragraph-right").fadeIn("linear");
     } else if ($container.hasClass("hover-left")) {
         $(".paragraph-left").addClass("active");
         $(".price-left").addClass("on");
         $(".btn-left").addClass("on");
-        // $(".paragraph-left").fadeIn("linear");
-
 
     } else {
         $(".paragraph-right").removeClass("active");
