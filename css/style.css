@@ -232,7 +232,8 @@ body {
   display: inline-block;
   vertical-align: middle;
   border-radius: 5px;
-  margin: 15px; }
+  margin: 15px;
+  color: #333; }
 .shoppingList .table-bottom {
   padding: 20px 120px; }
   .shoppingList .table-bottom::after {
@@ -242,30 +243,35 @@ body {
   .shoppingList .table-bottom img {
     width: 15%;
     float: left; }
-  .shoppingList .table-bottom .check-out {
-    width: 40%;
+  .shoppingList .table-bottom .checkOut {
+    width: 50%;
     float: right;
-    flex: none;
-    border: 1px solid red;
-    text-align: center; }
-  .shoppingList .table-bottom .btn {
-    float: right;
-    color: white;
-    background-color: blue;
-    padding: 10px 60px;
-    border-radius: 25px;
-    box-shadow: 5px 12px 25px rgba(0, 0, 0, 0.6);
-    margin-left: 40px; }
-  .shoppingList .table-bottom .result {
-    float: right;
-    font-weight: 900;
-    font-size: 2rem;
-    vertical-align: middle;
-    margin-right: 30px; }
-    .shoppingList .table-bottom .result.i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; }
+    .shoppingList .table-bottom .checkOut .btn {
+      float: left;
+      color: white;
+      background-color: #0192cc;
+      padding: 10px 60px;
+      border-radius: 25px;
+      box-shadow: 5px 12px 25px rgba(1, 146, 204, 0.6);
+      margin-left: 40px; }
+    .shoppingList .table-bottom .checkOut .result {
+      float: left;
+      font-weight: 900;
       font-size: 2rem;
-      vertical-align: middle; }
-  .shoppingList .table-bottom p {
-    font-size: 2rem; }
+      margin: 0 70px 0 40px; }
+      .shoppingList .table-bottom .checkOut .result .fa-euro-sign {
+        font-size: 1.8rem;
+        vertical-align: middle;
+        margin: 0;
+        padding: 0 5px; }
+    .shoppingList .table-bottom .checkOut p {
+      float: left;
+      font-size: 2rem;
+      font-weight: 400;
+      margin-top: 0; }
 
 /*# sourceMappingURL=style.css.map */
