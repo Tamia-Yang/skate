@@ -51,10 +51,11 @@ function isHover() {
 
 }
 //section2
-
-
 document.querySelector(".btn-right").addEventListener("click", () => {
     var location = document.querySelector(".shoppingList").offsetTop;
     window.scrollTo({ top: location, behavior: 'smooth' })
 
+})
+document.querySelector(".close").addEventListener("click", () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' })
 })

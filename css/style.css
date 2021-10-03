@@ -179,99 +179,101 @@ body {
 .hover-right .right {
   width: var(--hover-width); }
 
-.shoppingList .container-bag {
+.shoppingList {
   width: 100%;
-  height: 100%;
-  position: relative; }
-  .shoppingList .container-bag .title {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 3rem 5rem; }
-    .shoppingList .container-bag .title span {
-      font-size: 2rem; }
-    .shoppingList .container-bag .title .close {
-      font-size: 1.4rem; }
-  .shoppingList .container-bag h3 {
-    font-size: 3rem;
-    font-weight: 900; }
-  .shoppingList .container-bag .heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 5rem;
-    margin-bottom: 10px; }
-    .shoppingList .container-bag .heading span {
+  height: 100vh; }
+  .shoppingList .container-bag {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    .shoppingList .container-bag .title {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 3rem 5rem; }
+      .shoppingList .container-bag .title span {
+        font-size: 2rem; }
+      .shoppingList .container-bag .title .close {
+        font-size: 1.4rem; }
+    .shoppingList .container-bag h3 {
+      font-size: 3rem;
       font-weight: 900; }
-.shoppingList .table {
-  width: 100%;
-  height: 100%;
-  padding: 0 30px; }
-  .shoppingList .table img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover; }
-  .shoppingList .table tr th, .shoppingList .table tr td {
-    text-align: center;
-    width: 16.8%;
-    height: 10% x;
-    font-weight: 900;
-    font-size: 1.3rem; }
-    .shoppingList .table tr th:nth-child(2), .shoppingList .table tr td:nth-child(2) {
-      width: 10%; }
-  .shoppingList .table tr td {
-    font-weight: 400;
-    border-top: 1px solid #ccc; }
-  .shoppingList .table tr .fa-euro-sign {
-    font-size: 1.3rem; }
-.shoppingList .count-result {
-  width: 70px;
-  height: 40px;
-  text-align: center;
-  border: 1px solid #ccc;
-  display: inline-block;
-  vertical-align: middle;
-  border-radius: 5px;
-  margin: 15px;
-  color: #333; }
-.shoppingList .table-bottom {
-  padding: 20px 120px; }
-  .shoppingList .table-bottom::after {
-    content: '';
-    clear: both;
-    display: block; }
-  .shoppingList .table-bottom img {
-    width: 15%;
-    float: left; }
-  .shoppingList .table-bottom .checkOut {
-    width: 50%;
-    float: right;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px; }
-    .shoppingList .table-bottom .checkOut .btn {
-      float: left;
-      color: white;
-      background-color: #0192cc;
-      padding: 10px 60px;
-      border-radius: 25px;
-      box-shadow: 5px 12px 25px rgba(1, 146, 204, 0.6);
-      margin-left: 40px; }
-    .shoppingList .table-bottom .checkOut .result {
-      float: left;
+    .shoppingList .container-bag .heading {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 5rem;
+      margin-bottom: 10px; }
+      .shoppingList .container-bag .heading span {
+        font-weight: 900; }
+  .shoppingList .table {
+    width: 100%;
+    padding: 0 30px; }
+    .shoppingList .table img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover; }
+    .shoppingList .table tr th, .shoppingList .table tr td {
+      text-align: center;
+      width: 16.8%;
+      height: 50px;
       font-weight: 900;
-      font-size: 2rem;
-      margin: 0 70px 0 40px; }
-      .shoppingList .table-bottom .checkOut .result .fa-euro-sign {
-        font-size: 1.8rem;
-        vertical-align: middle;
-        margin: 0;
-        padding: 0 5px; }
-    .shoppingList .table-bottom .checkOut p {
-      float: left;
-      font-size: 2rem;
+      font-size: 1.3rem; }
+      .shoppingList .table tr th:nth-child(2), .shoppingList .table tr td:nth-child(2) {
+        width: 10%; }
+    .shoppingList .table tr td {
       font-weight: 400;
-      margin-top: 0; }
+      border-top: 1px solid #ccc; }
+    .shoppingList .table tr .fa-euro-sign {
+      font-size: 1.3rem; }
+  .shoppingList .count-result {
+    width: 70px;
+    height: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    display: inline-block;
+    vertical-align: middle;
+    border-radius: 5px;
+    margin: 15px;
+    color: #333; }
+  .shoppingList .table-bottom {
+    padding: 20px 120px; }
+    .shoppingList .table-bottom::after {
+      content: '';
+      clear: both;
+      display: block; }
+    .shoppingList .table-bottom img {
+      width: 15%;
+      float: left; }
+    .shoppingList .table-bottom .checkOut {
+      width: 50%;
+      float: right;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 20px; }
+      .shoppingList .table-bottom .checkOut .btn {
+        float: left;
+        color: white;
+        background-color: #0192cc;
+        padding: 10px 60px;
+        border-radius: 25px;
+        box-shadow: 5px 12px 25px rgba(1, 146, 204, 0.6);
+        margin-left: 40px; }
+      .shoppingList .table-bottom .checkOut .result {
+        float: left;
+        font-weight: 900;
+        font-size: 2rem;
+        margin: 0 70px 0 40px; }
+        .shoppingList .table-bottom .checkOut .result .fa-euro-sign {
+          font-size: 1.8rem;
+          vertical-align: middle;
+          margin: 0;
+          padding: 0 5px; }
+      .shoppingList .table-bottom .checkOut p {
+        float: left;
+        font-size: 2rem;
+        font-weight: 400;
+        margin-top: 0; }
 
 /*# sourceMappingURL=style.css.map */
