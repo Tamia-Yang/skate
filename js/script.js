@@ -62,18 +62,8 @@ document.querySelector(".close").addEventListener("click", () => {
 
 // shopping bag
 
-const add = document.querySelector(".fa-plus");
-const sub = document.querySelector(".fa-minus");
-const countResult = document.querySelector(".count-result");
+const add = document.querySelectorAll(".fa-plus");
+const sub = document.querySelectorAll(".fa-minus");
+const countResult = document.querySelectorAll(".count-result");
 
-add.addEventListener("click", () => {
-    countResult.innerHTML++;
-})
-sub.addEventListener("click", () => {
-    countResult.innerHTML--;
-    if (countResult <= 0) {
-        countResult.innerHTML = 0;
-    } else {
-        countResult.innerHTML--;
-    }
-})
+
